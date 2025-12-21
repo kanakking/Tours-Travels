@@ -1,74 +1,358 @@
-<!DOCTYPE html>
-  <HTML lang="en">
-    <HEAD>
-      <META charset="UTF-8">
-      <META content="width=width-device, intial-scale=1.0">
-      <META name="description" content="travel guide">
-      <title>Travel Agency Page</title>
-    </HEAD>
-    <BODY>
-      <h1>Discover India</h1>
-      <p></p>
-      <h2> Packages</h2>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Travel guide to India: packages and top itineraries." />
+  <title>Discover India | Travel Agency</title>
+
+  <style>
+    :root{
+      --max: 980px;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --card: #ffffff;
+      --bg: #f6f7fb;
+      --border: #e5e7eb;
+    }
+
+    *{ box-sizing: border-box; }
+    body{
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    header, main, footer{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header{
+      padding-top: 28px;
+      padding-bottom: 10px;
+    }
+
+    h1{ margin: 0 0 6px; }
+    .lead{ color: var(--muted); margin: 0; }
+
+    section{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      margin: 16px 0;
+    }
+
+    h2{ margin: 0 0 10px; }
+    h3{ margin: 18px 0 8px; }
+    h4{ margin: 14px 0 6px; }
+
+    ul{ margin: 8px 0 0; padding-left: 18px; }
+    a{ color: #0b63ce; text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    figure{ margin: 12px 0 18px; }
+    img{
+      display: block;
+      width: min(100%, 720px);
+      height: auto;
+      margin: 0 auto;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+    figcaption{
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 6px;
+    }
+
+    .grid{
+      display: grid;
+      gap: 14px;
+    }
+    @media (min-width: 780px){
+      .grid{ grid-template-columns: 1fr 1fr; }
+    }
+
+    .note{
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 8px;
+    }
+
+    footer{
+      color: var(--muted);
+      font-size: 0.95rem;
+      padding-bottom: 28px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Discover India</h1>
+    <p class="lead">
+      Landscapes, heritage, food, festivals, and unforgettable itineraries—pick a style of trip and start exploring.
+    </p>
+  </header>
+
+  <main>
+    <section aria-labelledby="about">
+      <h3 id="about">Why visit India</h3>
       <p>
-
-        <ul>
-          <li><a>Group Travels</a></li>
-          <li><a>Private Tours</a></li>
-        </ul>
-
+        India offers a uniquely diverse and enriching travel experience. The country spans snow-capped Himalayas,
+        deserts, forests, plains, islands, and a long coastline—so you can plan anything from nature and adventure
+        to slow, scenic getaways.
       </p>
-      <h2>Top Itineraries</h2>
+      <p>
+        It’s also home to iconic monuments and architectural wonders such as the Taj Mahal (a UNESCO World Heritage Site),
+        the Red Fort in Delhi, Hampi’s ancient ruins, the Brihadeeswara Temple, and the Mysore Palace—each reflecting
+        centuries of cultural influence.
+      </p>
+    </section>
+
+    <section aria-labelledby="packages">
+      <h2 id="packages">Packages</h2>
+      <p>
+        We offer holiday options for all travel styles—from quick city excursions to deep cultural tours and hidden villages.
+      </p>
+      <ul>
+        <li><a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">Group Travels</a></li>
+        <li><a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">Private Tours</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="itineraries">
+      <h2 id="itineraries">Top itineraries</h2>
+
       <h3 style="text-align:center">Royal Beauty</h3>
-      <h4><i> Jaipur </i></h4>
-      <p>Jaipur, known as the Pink City, is a captivating destination that blends rich history, vibrant culture, and stunning architecture, making it a must-visit for travelers seeking an authentic Indian experience. The city’s iconic pink-hued buildings, a tradition dating back to 1876 to welcome the Prince of Wales, create a visually striking and cohesive urban landscape that reflects its deep-rooted heritage and royal legacy</p>
-    <figure><a href="https://www.freecodecamp.org/learn" target="_blank"> <img src="https://imgs.search.brave.com/QeHg2Rl1eklc8ZYzzgQ5VgTkWIq0hKoKvZ7Rm0i6S9Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/amFpcHVydGF4aXNl/cnZpY2VzLmNvbS9i/bG9ndG91ci9wbGFj/ZXMtdG8tdmlzaXQt/cmFqYXN0aGFuLWlu/LWRlY2VtYmVyLndl/YnA" alt="Amber Fort"></a></figure>
-    <figcaption style="text-align:center">Amber Fort</figcaption>
 
-      <h4><i> Udaipur </i></h4>
-      <p>The city's architectural marvels are a major draw, with iconic landmarks such as the City Palace, a 450-year-old palace complex housing museums, courtyards, and gardens, and the floating Jag Mandir Palace located in the middle of Lake Pichola.
- Other notable attractions include Saheliyon Ki Bari, a lush garden with fountains and marble pavilions, and the Monsoon Palace (Sajjangarh), which offers panoramic views of the city and surrounding hills.
- The Vintage Car Museum and Crystal Gallery showcase the royal heritage and artistic craftsmanship of the region</p>
-      <figure><a href="https://www.freecodecamp.org/learn" target="_blank"> 
-    <img src="https://imgs.search.brave.com/K8OxdoXqXLugVnZ9PDkPiiyF3wx30iSGno7G8DInjJ4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50YXRsZXIuY29t/L3Bob3Rvcy82NDg4/NmEzOWU3MGNmNmJj/NjRlNmU3ZTkvbWFz/dGVyL3dfMTYwMCxj/X2xpbWl0L1Rhal8x/MzA2MjNfSGVybyUy/MFBpY3R1cmUlMjBU/TFBfRXh0ZXJpb3Il/MjBTaG90LmpwZy5q/cGc" alt="Floating Jag Mandir palace"></a></figure>
-    <figcaption style="text-align:center">Floating Jag Mandir palace</figcaption>
-      <h4><i> Jodhpur </i></h4>
-      <p>Beyond its forts and colorful streets, Jodhpur boasts significant landmarks such as the white marble Jaswant Thada, a serene mausoleum with intricate carvings and a peaceful lakeside setting, and the opulent Umaid Bhawan Palace, one of the largest private residences in the world, which now serves as a luxury heritage hotel and museum showcasing vintage cars and royal artifacts.
- The Mandore Gardens, located just outside the city, offer a lush retreat with cenotaphs, temples, and a glimpse into the former capital of the Marwar Kingdom.</p>
-      <figure><a href="https://www.freecodecamp.org/learn" target="_blank">
-        <img src="https://imgs.search.brave.com/mgkiLttsvF3R4N-j1bFuaNrY9pH0UEwvHoXw9-l5B7Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dG91cm15aW5kaWEu/Y29tL3N0YXRlcy9y/YWphc3RoYW4vaW1h/Z2Uvam9kaHB1ci1i/YW5uZXIud2VicA" alt="A beautful view of The Blue city from the sky "></a>
-        <figcaption style="text-align:center">Blue city</figcaption>
-      <h4><i> Mysore </i></h4>
-      <p>One of the most compelling reasons to visit Mysore is the grand celebration of Dussehra, also known as Dasara, which transforms the city into a vibrant wonderland with elephant parades, elaborate floats, fireworks, and cultural performances.
- This festival, held in October, is a highlight for tourists from around the world and showcases the city's deep-rooted cultural significance.
- Beyond the festivities, Mysore offers a serene and peaceful atmosphere, with clean streets, abundant greenery, and a calm ambiance that contrasts with the hustle and bustle of other Indian cities</p>
-      <figure><a href="https://www.freecodecamp.org/learn" target="_blank"><img src="https://imgs.search.brave.com/BbomD_ph0DhmvpPfCWNded7Fdma2CKp7tXFkRvnGDhU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9rYXJu/YXRha2F0b3VyaXNt/Lm9yZy9jaS9xXzgw/LHdfNTAwL2Ntcy93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNS8w/Ny9teXNvcmUtcGFs/YWNlLWlsbHVtaW5h/dGVkLTEuanBn" alt="Mysore Palace "></a></figure>
-      <figcaption style="text-align:center">Mysore Palace</figcaption>
-      <h4><i> Hyderabad </i></h4>
-      <p>The city, known as the "City of Pearls," offers a deep dive into India's past through iconic landmarks such as the Charminar, a 16th-century monument built by the Qutb Shahi dynasty, and the Golconda Fort, which once housed the famed Kohinoor diamond and provides panoramic views of the city.
- Visitors can explore the opulent Chowmahalla Palace, the Salar Jung Museum housing a vast global art collection, and the Qutb Shahi Tombs, all showcasing the city's Indo-Saracenic architectural heritage.</p>
-      <figure><a href="https://www.freecodecamp.org/learn" target="_blank"><img src="https://imgs.search.brave.com/B4nnSxdDIebg5809dPEVVUNW_syL_sMQ44Be2ifU5i4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudHJhdmVsYW5k/bGVpc3VyZWFzaWEu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy9z/aXRlcy8yLzIwMjQv/MDgvMjIxNDU2Mzcv/ZmVhdHVyZWQtaW1h/Z2UtMjguanBnP3Ry/PXctNDgwLGYtanBn/LHByLXRydWU" alt=" Centeral Market of Hyderabadh"></a>
-      <figcaption style="text-align:center">Central Market</figcaption></figure>
-      
-      <h4><i> Lucknow </i></h4>
-      <p>Fondly known as the "City of Nawabs," Lucknow offers a unique blend of regal past and vibrant present, making it a must-visit destination.
- The city's architectural grandeur is evident in landmarks such as the Bara Imambara, home to the world's largest unsupported arched hall, and the Chota Imambara, renowned for its intricate calligraphy and historical significance.
- The Rumi Darwaza, inspired by the gates of Constantinople, stands as a majestic symbol of Awadhi architecture and a prominent feature of the city's skyline.</p>
-      <figure><a href="https://www.freecodecamp.org/learn" target="_blank"><img src="https://imgs.search.brave.com/DCK0qp3W5LogbgPoX7NQuRZxl5d21ekC2D-m-r-NSpc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zN2Fw/MS5zY2VuZTcuY29t/L2lzL2ltYWdlL2lu/Y3JlZGlibGVpbmRp/YS8yLWFtYmVka2Fy/LW1lbW9yaWFsLXBh/cmstbHVja25vdy11/cC1jaXR5LWhlcm8_/cWx0PTgyJnRzPTE3/NDIxNzczODI3Mjg" alt="Ambedkar Memorial"></a>
-      <figcaption style="text-align:center">Ambedkar Memorial</figcaption></figure>
+      <div class="grid">
+        <div>
+          <h4><i>Jaipur</i></h4>
+          <p>
+            Jaipur, the Pink City, blends royal history with vibrant markets and stunning architecture.
+            Its famous pink buildings trace back to 1876, creating a distinctive and memorable cityscape.
+          </p>
+          <figure>
+            <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+              <img src="https://imgs.search.brave.com/hcoeamYUW0tmxmtgozOsAAqlDr4_lY2kycD3D-ufIgw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzUv/MTUwLzQwMy9zbWFs/bC9haS1nZW5lcmF0/ZWQtdGhlLWFtYmVy/LWZvcnQtaW4tamFp/cHVyLXJhamFzdGhh/bi1pbmRpYS1hbWJl/ci1mb3J0LWFuZC1t/YW90YS1sYWtlLWph/aXB1ci1yYWphc3Ro/YW4taW5kaWEtYWkt/Z2VuZXJhdGVkLWZy/ZWUtcGhvdG8uanBn"
+                   alt="Amber Fort in Jaipur" loading="lazy" />
+            </a>
+            <figcaption>Amber Fort</figcaption>
+          </figure>
+        </div>
+
+        <div>
+          <h4><i>Udaipur</i></h4>
+          <p>
+            Udaipur is known for lakeside views and elegant palaces. Highlights include the City Palace complex
+            and Jag Mandir on Lake Pichola, plus gardens and panoramic viewpoints.
+          </p>
+          <figure>
+            <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+              <img src="https://imgs.search.brave.com/K8OxdoXqXLugVnZ9PDkPiiyF3wx30iSGno7G8DInjJ4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50YXRsZXIuY29t/L3Bob3Rvcy82NDg4/NmEzOWU3MGNmNmJj/NjRlNmU3ZTkvbWFz/dGVyL3dfMTYwMCxj/X2xpbWl0L1Rhal8x/MzA2MjNfSGVybyUy/MFBpY3R1cmUlMjBU/TFBfRXh0ZXJpb3Il/MjBTaG90LmpwZy5q/cGc"
+                   alt="Jag Mandir palace on Lake Pichola" loading="lazy" />
+            </a>
+            <figcaption>Jag Mandir</figcaption>
+          </figure>
+        </div>
+
+        <div>
+          <h4><i>Jodhpur</i></h4>
+          <p>
+            Jodhpur’s blue-painted lanes and grand forts make it a standout in Rajasthan.
+            Don’t miss Jaswant Thada, Umaid Bhawan Palace, and Mandore Gardens.
+          </p>
+          <figure>
+            <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+              <img src="https://imgs.search.brave.com/mgkiLttsvF3R4N-j1bFuaNrY9pH0UEwvHoXw9-l5B7Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dG91cm15aW5kaWEu/Y29tL3N0YXRlcy9y/YWphc3RoYW4vaW1h/Z2Uvam9kaHB1ci1i/YW5uZXIud2VicA"
+                   alt="A view of Jodhpur, the Blue City" loading="lazy" />
+            </a>
+            <figcaption>Blue City</figcaption>
+          </figure>
+        </div>
+
+        <div>
+          <h4><i>Mysore</i></h4>
+          <p>
+            Mysore is famous for Dasara celebrations and a relaxed, green atmosphere.
+            The illuminated Mysore Palace is a major highlight for visitors.
+          </p>
+          <figure>
+            <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+              <img src="https://imgs.search.brave.com/joWtqHPjDuSe9ur64_ugxrCocAZs3lH17LOAecqBkkQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzE2LzQ4Lzc2LzYy/LzM2MF9GXzE2NDg3/NjYyNzFfM0p0Y2VW/a0U0MzZqRUN3ZU9Q/MHVqblVZZ2kwM1RJ/UFouanBn"
+                   alt="Mysore Palace illuminated at night" loading="lazy" />
+            </a>
+            <figcaption>Mysore Palace</figcaption>
+          </figure>
+        </div>
+
+        <div>
+          <h4><i>Hyderabad</i></h4>
+          <p>
+            Explore Charminar, Golconda Fort, Chowmahalla Palace, the Salar Jung Museum, and the Qutb Shahi Tombs
+            for a deep look into the city’s history and architecture.
+          </p>
+          <figure>
+            <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+              <img src="https://imgs.search.brave.com/B4nnSxdDIebg5809dPEVVUNW_syL_sMQ44Be2ifU5i4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudHJhdmVsYW5k/bGVpc3VyZWFzaWEu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy9z/aXRlcy8yLzIwMjQv/MDgvMjIxNDU2Mzcv/ZmVhdHVyZWQtaW1h/Z2UtMjguanBnP3Ry/PXctNDgwLGYtanBn/LHByLXRydWU"
+                   alt="A market scene in Hyderabad" loading="lazy" />
+            </a>
+            <figcaption>Central Market</figcaption>
+          </figure>
+        </div>
+
+        <div>
+          <h4><i>Lucknow</i></h4>
+          <p>
+            The City of Nawabs is known for Awadhi culture and grand architecture.
+            See Bara Imambara, Chota Imambara, and the iconic Rumi Darwaza.
+          </p>
+          <figure>
+            <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+              <img src="https://imgs.search.brave.com/DCK0qp3W5LogbgPoX7NQuRZxl5d21ekC2D-m-r-NSpc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zN2Fw/MS5zY2VuZTcuY29t/L2lzL2ltYWdlL2lu/Y3JlZGlibGVpbmRp/YS8yLWFtYmVka2Fy/LW1lbW9yaWFsLXBh/cmstbHVja25vdy11/cC1jaXR5LWhlcm8_/cWx0PTgyJnRzPTE3/NDIxNzczODI3Mjg"
+                   alt="Ambedkar Memorial Park in Lucknow" loading="lazy" />
+            </a>
+            <figcaption>Ambedkar Memorial</figcaption>
+          </figure>
+        </div>
+      </div>
+
       <h3 style="text-align:center">Lakes and Falls</h3>
-      <h4>Chilika Lake: Odisha</h4>
-      <p> Chilika is the largest salt-water lake in Asia. It presents the tourists with a picturesque landscape and is hailed for its rich biodiversity. During the winter months, migratory birds flock to the site from the distant regions of Russia, Mongolia, South East Asia, and Ladakh. </p>
-      <figure><a href="https://www.freecodecamp.org/learn" target="_blank"><img src="https://imgs.search.brave.com/kPYU4uq_Q8AdiEzIDt_RdZWjL1UYcq4whEqbE3pB1cs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9h/L2E3L01pZ3JhdG9y/eV9GbGFtaW5nb3Nf/YXRfQ2hpbGlrYS5q/cGc" alt="Migratory Flamingos by the chilika lake"></a></figure><figcaption style="text-align:center">Chilika Lake</figcaption>
-      <h4>Wular lake: Jammu & Kashmir</h4>
-      <p>Wular Lake is a must-visit destination for its breathtaking natural beauty and rich biodiversity. As one of Asia's largest freshwater lakes, it spans an area that can vary from approximately 130 to 260 square kilometers, depending on the season, creating a dynamic and ever-changing landscape.
- The lake is nestled in the Bandipora district of Jammu and Kashmir, about 60 kilometers from Srinagar, and is surrounded by the majestic Himalayan mountains</p>
- <img src="https://imgs.search.brave.com/rgY0WRBHD8fspe05YnBaxEc7eAiYngyRZ4TWDAynvMg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90b3Bj/bGFzc2hvbGlkYXlz/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNS8wNi9XdWxh/ci1sYWtlLTYwMHg0/MDAuanBn" alt="Wular lake">
- <h4>GuruDongmar Lake: Sikkim</h4>
- <p>Gurudongmar Lake in Sikkim, located at a height of 17,800 ft is one of the highest lakes in the world. Named after Guru Padmasambhava who is famously known as Guru Rinpoche, the lake is considered to be sacred. One of the unexplored and uncharted attractions of Sikkim, this lake is just a few kilometres away from the Chinese Tibetan border. It is a pristine beauty with breathtaking environs.</p>
- <img src="https://imgs.search.brave.com/31INeo-97OzJqCGpBvcEmQ9q9VzUGL_eLxm2NR2ED_I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudHJhdmVsdHJp/YW5nbGUuY29tL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTkvMDkvQmVzdC1U/aW1lLVRvLVZpc2l0/LUd1cnVkb25nbWFy/LUxha2UxLmpwZw" alt="Picture of gurudongmar">
-      <h3 style="text-align:center">Adventure Sports</h3>
-      <p></p>
 
-    </BODY>
-  </HTML>
+      <div class="grid">
+        <div>
+          <h4>Chilika Lake: Odisha</h4>
+          <p>
+            Chilika is a large brackish-water lagoon known for scenic views and biodiversity.
+            In winter, migratory birds arrive from many regions.
+          </p>
+          <figure>
+            <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+              <img src="https://imgs.search.brave.com/kPYU4uq_Q8AdiEzIDt_RdZWjL1UYcq4whEqbE3pB1cs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9h/L2E3L01pZ3JhdG9y/eV9GbGFtaW5nb3Nf/YXRfQ2hpbGlrYS5q/cGc"
+                   alt="Migratory flamingos at Chilika Lake" loading="lazy" />
+            </a>
+            <figcaption>Chilika Lake</figcaption>
+          </figure>
+        </div>
+
+        <div>
+          <h4>Wular Lake: Jammu &amp; Kashmir</h4>
+          <p>
+            Wular is one of Asia’s largest freshwater lakes, surrounded by Himalayan scenery.
+            Its size changes with the seasons, creating an ever-shifting landscape.
+          </p>
+          <figure>
+            <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+              <img src="https://imgs.search.brave.com/rgY0WRBHD8fspe05YnBaxEc7eAiYngyRZ4TWDAynvMg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90b3Bj/bGFzc2hvbGlkYXlz/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNS8wNi9XdWxh/ci1sYWtlLTYwMHg0/MDAuanBn"
+                   alt="Wular Lake surrounded by mountains" loading="lazy" />
+            </a>
+            <figcaption>Wular Lake</figcaption>
+          </figure>
+        </div>
+
+        <div>
+          <h4>Gurudongmar Lake: Sikkim</h4>
+          <p>
+            Gurudongmar Lake is a high-altitude, sacred lake near the Tibetan border, known for pristine views
+            and dramatic surroundings.
+          </p>
+          <figure>
+            <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+              <img src="https://imgs.search.brave.com/31INeo-97OzJqCGpBvcEmQ9q9VzUGL_eLxm2NR2ED_I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudHJhdmVsdHJp/YW5nbGUuY29tL2Js/b2cvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTkvMDkvQmVzdC1U/aW1lLVRvLVZpc2l0/LUd1cnVkb25nbWFy/LUxha2UxLmpwZw"
+                   alt="Gurudongmar Lake in Sikkim" loading="lazy" />
+            </a>
+            <figcaption>Gurudongmar</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <h3 style="text-align:center">Adventure Sports</h3>
+
+      <div class="grid">
+        <div>
+          <h4>Rishikesh: White-Water Rafting</h4>
+          <p>
+            Rishikesh, nestled in the foothills of the Himalayas, is <strong>India’s premier destination for white-water rafting</strong> on the Ganges River. 
+            The river offers thrilling rapids ranging from Grade I (calm) to Grade V (challenging), suitable for both beginners and experts. 
+            Most expeditions run between <strong>September and November</strong>, when water levels are ideal. 
+            Professional guides, safety gear, and training sessions ensure a safe yet adrenaline-pumping experience. 
+            Beyond rafting, you can try <strong>bungee jumping, giant swings, and camping</strong> by the riverside.
+          </p>
+          <figure>
+            <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+              <img src="https://imgs.search.brave.com/J5m8c5Lz-QigsnGcqsv4A17xTsGdL48fZT-LidnN2Zg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXMu/a2xvb2suY29tL2lt/YWdlcy9mbF9sb3Nz/eS5wcm9ncmVzc2l2/ZSxxXzY1L2NfZmls/bCx3XzEyOTUsaF85/MTgvd184MCx4XzE1/LHlfMTUsZ19zb3V0/aF93ZXN0LGxfS2xv/b2tfd2F0ZXJfYnJf/dHJhbnNfeWhjbWgz/L2FjdGl2aXRpZXMv/aGFlOXlveXlpYmdt/cGFjamplcWQvUmlz/aGlrZXNoV2lsZFJp/dmVyUmFmdGluZ0V4/cGVyaWVuY2V3aXRo/YW5FeHBlcnQud2Vi/cA  " alt="White-water rafting in Rishikesh" loading="lazy" />
+            </a>
+            <figcaption>Rafting on the Ganges</figcaption>
+          </figure>
+        </div>
+
+        <div>
+          <h4>Manali: Trekking & Paragliding</h4>
+          <p>
+            Manali in Himachal Pradesh is a <strong>hub for Himalayan adventures</strong>. 
+            Popular treks include the <strong>Solang Valley</strong> (easy-moderate, 3-4 hours) and the challenging 
+            <strong>Beas Kund trek</strong> (7-8 hours) that leads to a high-altitude alpine lake. 
+            For aerial thrills, <strong>paragliding at Solang Valley</strong> offers stunning views of snow-capped peaks. 
+            Winter transforms the region into a ski paradise, with slopes suitable for all skill levels. 
+            The best time to visit is <strong>April to June</strong> (summer) or <strong>December to February</strong> (winter sports).
+          </p>
+          <figure>
+            <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+              <img src="https://imgs.search.brave.com/LunbKZpVkTKOyMyJmVxwMjj5iwdAphEYRadwL_E9CDQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMjZk/cDUza3ozOTE3OC5j/bG91ZGZyb250Lm5l/dC9tZWRpYS91cGxv/YWRzL1RyYXZlbF9H/dWlkZV9JbWFnZXMv/QWR2ZW50dXJlX0Fj/dGl2aXRpZXNfaW5f/TWFuYWxpMV9yZXN1/bHQtMTc1MDgzMzE0/ODc4Mi53ZWJw" alt="Trekking in Manali" loading="lazy" />
+            </a>
+            <figcaption>Solang Valley Trek</figcaption>
+          </figure>
+        </div>
+
+        <div>
+          <h4>Andaman Islands: Scuba Diving</h4>
+          <p>
+            The Andamans are home to some of <strong>India’s best scuba diving spots</strong>, with crystal-clear waters, 
+            vibrant coral reefs, and marine life like sharks, rays, and sea turtles. 
+            Popular sites include <strong>Havelock Island’s Elephant Beach</strong> and <strong>Neil Island’s Bharatpur</strong>. 
+            Courses range from beginner (PADI Open Water) to advanced dives. 
+            The diving season runs from <strong>October to May</strong>, avoiding monsoon rough seas. 
+            Most operators provide full equipment, boat rides, and certified instructors for a safe underwater experience.
+          </p>
+          <figure>
+            <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+              <img src="https://imgs.search.brave.com/UltUr8uH6APw06ZJev5JItM7VtVRnDe0mi0iMdPJrqM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kMjZk/cDUza3ozOTE3OC5j/bG91ZGZyb250Lm5l/dC9tZWRpYS91cGxv/YWRzL3Byb2R1Y3Rz/LzFfOF9BN3NVTHBU/LmpwZw" alt="Scuba diving in Andaman Islands" loading="lazy" />
+            </a>
+            <figcaption>Scuba Diving in Andamans</figcaption>
+          </figure>
+        </div>
+
+        <div>
+          <h4>Ladakh: Motorcycling</h4>
+          <p>
+            Ladakh’s <strong>high-altitude desert terrain</strong> makes it a legend for motorcycling. 
+            The <strong>Leh-Manali Highway</strong> (500 km) is one of Asia’s most thrilling rides, with passes like 
+            <strong>Rohtang</strong> (13,050 ft) and <strong>Khardung La</strong> (18,380 ft). 
+            Best ridden between <strong>June and September</strong> when roads are snow-free. 
+            Riders need acclimatization to avoid AMS (Acute Mountain Sickness). 
+            Along the route, you’ll find monasteries, crystal-blue lakes like <strong>Pangong Lake</strong>, 
+            and opportunities for <strong>camping under star-filled skies</strong>.
+          </p>
+          <figure>
+            <a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener noreferrer">
+              <img src="https://imgs.search.brave.com/uXr4zL1e7zl06y7pE0cFlArkVJ56U_GIGCUxDfBBmcw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzEzLzA0LzQ1LzM2/LzM2MF9GXzEzMDQ0/NTM2OTFfbUhzdW5t/OXZWamppZ3pzZGRz/M2pWN0lVd2Q3OUJW/V3QuanBn" alt="Motercycling in Ladakh" loading="lazy">
+            </a>
+            <figcaption>Leh-Manali Highway</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © Travel Agency Page — simple demo layout
+  </footer>
+</body>
+</html>
